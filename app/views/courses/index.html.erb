@@ -2,7 +2,6 @@
 
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center">Learn something today</h1>
-  <%= image_tag @course.image, class: 'img-fluid' %>
   <hr />
 
 <% @courses.each do |course| %>
@@ -19,4 +18,6 @@
     </div>
   </div>
   <br class="clr" />
+      <%= image_tag course.image.to_s, class: 'img-fluid' %>
+
 <% end %>
